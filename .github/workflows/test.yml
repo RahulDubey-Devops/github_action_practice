@@ -1,0 +1,26 @@
+name : Test
+
+on: 
+  
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Check the node version
+      run: actions/checkout@v4
+    - name: SetUp node
+      run: actions/setup-node@v4
+    - name: Install the node
+      run: npm i
+    - name: Build 
+      run: npm run build
+
+  
