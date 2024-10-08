@@ -14,8 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-    - name: Check the node version
-      run: actions/checkout@v4
+    - uses: actions/checkout@v4
+    
     - name: SetUp node
       run: "18.x"
     - name: Install the node
