@@ -15,10 +15,12 @@ jobs:
     steps:
 
     - uses: actions/checkout@v4
-    - name: Use Node.js 
-      uses: actions/setup-node@v4
-    - name: SetUp node
-      run: "18.x"
+  
+    - uses: actions/setup-node@v4
+      with:
+        node-version: "18.x"
+        cache: "npm"
+  
     - name: Install the node
       run: npm i
     - name: Build 
