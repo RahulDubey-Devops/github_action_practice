@@ -17,7 +17,7 @@ jobs:
     - name: Check the node version
       run: actions/checkout@v4
     - name: SetUp node
-      run: actions/setup-node@v4
+      run: "18.x"
     - name: Install the node
       run: npm i
     - name: Build 
