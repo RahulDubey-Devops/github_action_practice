@@ -23,7 +23,6 @@ jobs:
     - name: Install the node
       run: echo "hello Rahul!"
       shell: bash
-    - name: Build 
-      run: npm run build
+
 
   
